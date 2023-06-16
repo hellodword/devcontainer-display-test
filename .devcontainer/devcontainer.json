@@ -1,0 +1,10 @@
+{
+	"name": "devcontainer-display-test",
+	"remoteUser": "vscode",
+	"dockerFile": "Dockerfile",
+	"context": "${localWorkspaceFolder}",
+	"runArgs": [
+		"-v", "/tmp/.X11-unix:/tmp/.X11-unix",
+		"-e", "DISPLAY=${env:DISPLAY}"
+	]
+}
